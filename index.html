@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.html">
+    <title>Selfie Generator Web</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="home/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home/css/custom.css">
+    <link rel="stylesheet" href="home/css/cropper.css">
+</head>
+
+<body class="" style="background-color:#f9e78b;background-image:url('home/img/Crystal_Diya.png');background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center"></div>
+            <div class="col-md-12">
+            <!-- <div class="row col-sm-12 col-md-12 col-lg-12" style="margin-top:16px;align:center;padding-bottom:16px;">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <img src="home/img/Crystal_Logo.png" id="previewImage" style="max-width: 70%; border-radius:10px;">
+                </div>
+            </div> -->
+            <div class="row div_center" style="margin-top:0px;">
+            <div class="col-xl-4 col-md-4 col-sm-12" style="text-align: center;margin-top:16px;padding-bottom:16px;">
+                    <!-- <img src="home/img/Crystal_Logo.png" id="logo" style="max-width: 60%; border-radius:10px;"> -->
+                </div>
+                <div class="col-md-12"> </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <form id="download_selfie" class="form-bg px-3" method="post" novalidate="true">
+                        <div class="row ">
+                            <div class="col">
+                                <label class="form-label mt-2">Select Your Photo</label>
+                                <div class="imageUploader">
+                                    <div class="user_pic_container_box">
+                                        <img data-type="circle" data-width="765" data-height="765" class='user_pic_container' src='home/img/profile_img_1.png'/>
+                                    </div>
+                                    <input readonly style="display: none" id='file_browse' type="file" accept="image/*" required>
+                                    <input type="hidden"  id="profile_pic_1" class="value_container" require  />
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" name="f_name" id="f_name" value="" required pattern="[a-zA-Z ]{1,20}" maxlength="20" data-error="Please enter name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">WhatsApp Number</label>
+                                    <input type="text" class="form-control" name="user_phone" id="user_phone" value="" required pattern="[0-9]{10}" maxlength="10" data-error="Please enter number">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr class="mb-4">
+
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-md-6 mb-4 ">
+                                <button type="submit" id="sub" name="submit" class="btn title_bg btn-lg btn-block">Download</button>
+                                <div id="msgSubmit"></div>
+                            </div>
+                            <div class="col-6 col-md-6 mb-4 ">
+                                <button type="button" id="previewBtn" name="submit" class="btn title_bg btn-lg btn-block">Preview</button>
+                                <div id="msgSubmit"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <img src="home/img/Babra.png" id="previewImage" style="max-width: 93%; border-radius:10px;">
+                </div>
+
+            </div>
+           
+            </div>
+        </div>
+    </div>
+~
+    <img src="home/img/final.png" class="d-none" id="bannerImg" style="object-fit: contain;">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="home/js/bootstrap.min.js"></script>
+    <script src="home/js/cropper.js"></script>
+    <script src="home/js/image.js"></script>
+    <script src="home/js/form-validator.min.js"></script>
+    <script src="home/js/form-vali-script.js"></script>
+    <script src="https://unpkg.com/fabric@5.2.1/dist/fabric.min.js" ></script>
+</body>
+
+</html>
